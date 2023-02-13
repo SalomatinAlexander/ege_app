@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".second_page.SecondActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="vertical"
+        android:gravity="center|left"
+        android:paddingLeft="24dp"
+        android:backgroundTint="@color/black"
+        android:background="@color/black">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24">
+
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textFontWeight="700"
+            android:text="Задание 6"
+            android:id="@+id/number"
+            android:textSize="18sp">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/question"
+            android:text="Отредактируйте предложение: исправьте лексическую ошибку, заменив неверно употреблённое слово. Запишите это слово"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/description"
+            android:layout_marginTop="10dp"
+            android:text="Эти двое не были заядлыми друзьями, однако относились друг к другу с симпатией и большим уважением, поддерживали друг друга в групповых спорах."
+            >
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/grey"
+            android:layout_marginTop="15dp"
+            android:id="@+id/answer"
+            android:hint="Поле для ответа"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+        </EditText>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width= "wrap_content"
+                android:layout_height="56dp"
+                android:textSize="14sp"
+                android:text="Проверить ответ"
+                android:id="@+id/check_answer"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+            </androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="vertical"
+        android:backgroundTint="@color/black"
+        android:background="@color/black">
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
