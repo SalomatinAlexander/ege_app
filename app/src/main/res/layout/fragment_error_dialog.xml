@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    app:layout_anchorGravity="center"
+    android:backgroundTint="@color/error_dialog_color"
+    android:background="@color/error_dialog_color"
+    tools:context=".second_page.ErrorDialogFragment">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:id="@+id/error_dialog_back"
+            android:src="@drawable/ic_baseline_keyboard_double_arrow_left_24">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Неправильно"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        >
+    </TextView>
+
+    <TextView
+        android:text="Задание было выполнено неверно"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+    </TextView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer_linear"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer_id_txt"
+            android:text="Ответ:123"
+            android:textSize="20dp"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_answer_linear"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer_id_txt_1"
+            android:textColor="@color/purple_700"
+            android:text="Показать ответ"
+            android:textSize="20dp"
+            >
+        </TextView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/red_CF7355"
+            android:background="@color/red_CF7355"
+            android:id="@+id/try_again"
+            android:layout_marginRight="10dp"
+            android:text="Попробовать снова"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            >
+        </androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/go_to_menu_btn"
+            android:backgroundTint="@color/yellow_D1CC9A"
+            android:background="@color/yellow_D1CC9A"
+            android:text="В главное меню"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            >
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
